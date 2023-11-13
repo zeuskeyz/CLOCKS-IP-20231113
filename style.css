@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Prompt&family=Roboto&display=swap');
+:root {
+    --LIGHT-COLOR: white;
+    --DARK-COLOR: black;
+    --DARK-BG: black;
+    --LIGHT-BG: white;
+
+    --ARCHIVO-FF: 'Archivo', sans-serif;
+    --PROMPT-FF: 'Prompt', sans-serif;
+    --ROBOTO-FF: 'Roboto', sans-serif;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ANALOGUE CLOCK STYLING */
+#face {
+    background: url("/images/images.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#model{
+    position: absolute;
+    left: 42.5%;
+    top: 60%;
+    color: var(--LIGHT-COLOR);
+    font-family: var(--ARCHIVO-FF);
+}
+
+#hour, #minute, #second, #dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: top;
+    background-color: var(--LIGHT-BG);
+}
+
+#hour{
+    height: 25%;
+    border: 2px solid var(--LIGHT-COLOR);
+}
+
+#minute{
+    height: 35%;
+    border: 2px solid var(--LIGHT-COLOR);
+}
+
+#second{
+    height: 40%;
+    border: 1px solid var(--LIGHT-COLOR);
+}
+
+
+/* DIGITAL CLOCK STYLING */
+#clockFrame{
+    height: 250px;
+    width: 500px;
+    text-align: center;
+}
+
+#saa{
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size:xx-large;
+    font-family: var(--PROMPT-FF);
+}
+
+h1{
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+#tarehe{
+    font-size:large ;
+    font-family:var(--ROBOTO-FF) ;
+}
+
+#weekDays {
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    justify-content:space-evenly;
+    font: larger Georgia;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    align-items: baseline;
+    padding-left: 0px;
+    font-family: var(--ARCHIVO-FF);
+    
+}
+
+.currentDay span{
+    background-color: var(--DARK-BG);
+    color: var(--LIGHT-COLOR);
+    padding: 10px;
+}
+
+
