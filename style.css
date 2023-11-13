@@ -20,7 +20,7 @@
 
 /* ANALOGUE CLOCK STYLING */
 #face {
-    background: url("/images/images.png");
+    background-image: url("/images/images.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 300px;
